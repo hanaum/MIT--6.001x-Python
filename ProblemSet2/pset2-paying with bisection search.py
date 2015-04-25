@@ -1,10 +1,18 @@
+'''Using Bisection Search to Make the Program Faster: uses the bisection search to find the
+		smallest monthly payment (to the cent) such that we can pay off the debt within a year. 
+
+
+MIT-6.001x Python
+Hana Um
+'''
+
 balance = 320000
 original_balance = balance
 annualInterestRate = 0.2
 
-monthlyInterestRate = (annualInterestRate) / 12.0
+monthlyInterestRate = annualInterestRate / 12.0
 low = balance / 12.0
-high = (balance * (1 + monthlyInterestRate)**12.0) / 12.0
+high = balance * (1 + monthlyInterestRate**12.0) / 12.0
 monthly_pay = (low + high) / 2.0
 
 while abs(balance) >  0.01:
