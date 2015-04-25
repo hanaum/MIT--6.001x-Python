@@ -1,11 +1,20 @@
-s = 'lfgskypntweamtwyhrd'
+'''Alphabetical Substrings:
+Prints the longest substring of 's' in which the letters occur in alphabetical order.
+
+ex: 
+s = 'azcbobobegghakl'  should print out 'beggh'
+
+Hana Um
+MIT-6.001x Python
+'''
+
 word = s[0]
 
-for i in range(len(s)-1):
-    if s[i+1] >=  s[i]:
-        word += s[i+1]
+for i in range(len(s) - 1):
+    if s[i + 1] >=  s[i]:
+        word += s[i + 1]
     else:
-        word += ' ' + s[i+1]
+        word += ' ' + s[i + 1]
 
 final_list = word.split()
 biggest_sorted_word = ''
