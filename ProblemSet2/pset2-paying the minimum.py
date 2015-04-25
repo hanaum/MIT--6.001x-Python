@@ -1,16 +1,23 @@
+'''Paying the Minimum: calculates the credit card balance after one year if a person only 
+        pays the minimum monthly payment required by the credit card company each month.
+
+MIT-6.001x Python
+Hana Um
+'''
+
 months = 0
 loop = True
 
 total_paid = 0
-monthlyInterestRate = (annualInterestRate)/12.0
-minMonthlyPay = (monthlyPaymentRate) * (balance)
-monthlyUnpaidBalance = balance - (minMonthlyPay)
-updatedBalance = (monthlyUnpaidBalance) + (monthlyInterestRate * monthlyUnpaidBalance)
+monthlyInterestRate = annualInterestRate/12.0
+minMonthlyPay = monthlyPaymentRate * balance
+monthlyUnpaidBalance = balance - minMonthlyPay
+updatedBalance = monthlyUnpaidBalance + monthlyInterestRate * monthlyUnpaidBalance
 
 while loop:
     minMonthlyPay = monthlyPaymentRate * balance
-    monthlyUnpaidBalance = balance - (minMonthlyPay)
-    updatedBalance = (monthlyUnpaidBalance) + (monthlyInterestRate * monthlyUnpaidBalance)
+    monthlyUnpaidBalance = balance - minMonthlyPay
+    updatedBalance = monthlyUnpaidBalance + monthlyInterestRate * monthlyUnpaidBalance
     if months == 0:
         months += 1
         balance = updatedBalance
