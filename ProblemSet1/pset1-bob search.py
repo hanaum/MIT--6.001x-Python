@@ -1,8 +1,16 @@
-s = 'bobobqlpboobbobbobbflbobobbobobobobzobobuv'
+''' Counting Bobs: Prints the number of times the string 'bob' occurs in 's' string.
+
+ex:
+s = 'azcbobobegghakl' should print the number of times bob occurs as '2'
+
+MIT-6.001x Python
+Hana Um
+'''
+
 i = 0
 num_bobs = 0
 
-while i < len(s)-2:
+while i < len(s) - 2:
     if s[i] == 'b':
         i += 1
         if s[i] == 'o':
