@@ -1,3 +1,8 @@
+'''Uses bisection search to guess the secret number.
+
+MIT-6.001x Python
+Hana Um
+'''
 n = int((raw_input("Please enter a number between 0 and 1001: ")))
 high = 1000
 low = 1
