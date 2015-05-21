@@ -1,6 +1,7 @@
 # 6.00x Problem Set 6
 #
 # Part 1 - HAIL CAESAR!
+# Hana Um
 
 import string
 import random
@@ -141,7 +142,6 @@ def applyShift(text, shift):
     returns: text after being shifted by specified amount.
     """
     ### TODO.
-    ### HINT: This is a wrapper function.
     return applyCoder(text, buildCoder(shift))
 
 #
